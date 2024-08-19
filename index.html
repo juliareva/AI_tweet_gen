@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhoAmAI: Your Daily Dose of Fun Insights</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+<header>
+    <h1>WhoAmAI: Your Daily Dose of Fun Insights</h1>
+    <p>Feeling curious? Drop a few details, and we'll serve up some playful, tweet-sized existential musings just for fun!</p>
+</header>
+
+<section>
+    <form id="whoamAI-form">
+        <label for="persona">Choose Your Persona:</label>
+        <input type="text" id="persona" name="persona" placeholder="Enter a character, celebrity, or yourself" required>
+        
+        <label for="age">How Old Are You?</label>
+        <input type="number" id="age" name="age" placeholder="Your age for a personalized touch" required min="0">
+        
+        <label for="mood">Mood for the Quote:</label>
+        <select id="mood" name="mood" required>
+            <option value="cheerful">Cheerful</option>
+            <option value="pensive">Pensive</option>
+            <option value="quirky">Quirky</option>
+            <option value="melancholic">Melancholic</option>
+            <option value="motivational">Motivational</option>
+            <option value="witty">Witty</option>
+            <option value="reflective">Reflective</option>
+        </select>
+        
+        <label for="adjective">Pick an Adjective:</label>
+        <input type="text" id="adjective" name="adjective" placeholder="Pick a random adjective" required>
+        
+        <label for="sarcasm">Sarcasm Level:</label>
+        <input type="range" id="sarcasm" name="sarcasm" min="1" max="10" step="1" value="5">
+        <span id="sarcasm-value">5</span>
+        
+        <button type="submit">Get My Fun Insight (and a Giggle)!</button>
+    </form>
+</section>
+
+<section id="result-section">
+    <h2>Your Fun Insight is Ready!</h2>
+    <div id="result-container">
+        <img id="avatar" src="" alt="AI Avatar">
+        <p id="ai-insight"></p>
+    </div>
+</section>
+
+<script src="index.js"></script>
+</body>
+</html>
